@@ -20,7 +20,7 @@
                 var opacity = 1 - scrollPosition / elementHeight;
 
                 /* don't adjust opacity if element is above the current scroll position */
-                if (scrollPosition < elementBottom && opacity >= 0) {
+                if (scrollPosition < elementBottom && opacity >= 0 && opacity <= 1) {
                     $elementToFade.css("opacity", opacity);
                 }
             });
